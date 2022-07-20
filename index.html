@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>test-app</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+  <script> 
+    function myalert() { 
+        alert("Data anda telah tersimpan. Thanks");
+    } 
+
+    var length = document.getElementById("length");
+    myInput.onkeyup = function() {
+      // Ketika pengguna mengklik bidang kata sandi, tunjukkan kotak pesan
+      myInput.onfocus = function() {
+        document.getElementById("message").style.display = "block";
+      }
+
+      // Ketika pengguna mengklik di luar field password, sembunyikan kotak pesan
+      myInput.onblur = function() {
+        document.getElementById("message").style.display = "none";
+      }
+
+      // Saat pengguna mulai mengetik sesuatu di dalam field password
+      myInput.onkeyup = function() {
+      // Validasi huruf kecil(lowercase)
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {  
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+      }
+        // Validasi panjangnya
+          if(myInput.value.length >= 8) {
+            length.classList.remove("invalid");
+            length.classList.add("valid");
+          } else {
+            length.classList.remove("valid");
+            length.classList.add("invalid");
+          }
+        }
+      }
+  </script> 
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+  background-color: rgb(0, 132, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+.tes{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  width: 35%;
+  margin: 0 auto;
+  height: 700px;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+.tes.login{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  width: 35%;
+  margin: 100px auto;
+  height: 410px;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+input{
+  border: none;
+  height: 40px;
+  margin: 10px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+label{
+  margin: 10px 0px;
+}
+
+button{
+  border: none;
+  height: 40px;
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(67, 123, 226);
+}
+
+h5{
+ justify-content: center;
+  display: flex;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.router{
+  color: white;
+  text-decoration: none;
+}
+
+.terms{
+  color: blue;
+  text-decoration: none ;
+}
+
+.tandc{
+  display: flex;
+  flex-direction: row;
+}
+
+.in{
+  margin-right: 20px;
+  width: 30px;
+  box-shadow: none;
+}
+
+/* Kotak pesan ditampilkan ketika pengguna mengklik kolom password */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Tambahkan warna teks hijau dan tanda centang jika persyaratannya benar */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Tambahkan warna teks merah dan "x" jika persyaratannya salah*/
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
